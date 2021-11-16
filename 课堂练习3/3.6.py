@@ -1,9 +1,8 @@
-n=int(input())
-m=0
-for i in range(n):
-    a=[int(i) for i in input().split()]
-    b=a[0]
-    c=a[1]
-    if 90<=b<=140 and 60<=c<=90:
-        m+=1
-print(m)
+n=[int(i) for i in input().split()]
+for i in n:
+    if i<5000:
+        m=i*1.5
+    else:
+        m=i+2500
+# print('%.2f'%m)
+print('{:.2f}'.format(m))

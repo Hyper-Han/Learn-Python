@@ -1,5 +1,5 @@
 total=0
-score=list(map(int,input('输入得分：').split()))
+score=[int (i) for i in input('输入得分：').split()]
 score.sort() 
 del score[0]
 del score[-1]
