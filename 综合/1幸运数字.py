@@ -11,7 +11,7 @@ def isLucky(s,digit):
         return True
     else:
         return False
-s,digit = map(str,input().split())
+s,digit = input().split()
 if isLucky(s,digit):
     print('Lucky!')
 else:
